@@ -4,6 +4,12 @@
 
 # AJAX Dictionary Search [![AJAX Dictionary](https://img.shields.io/badge/ajax-dictionary-orange.svg)](https://github.com/gabrielecanepa/ajax-dictionary-search) [![GitHub top language](https://img.shields.io/github/languages/top/badges/shields.svg)](https://github.com/gabrielecanepa/ajax-dictionary-search)
 
+## [Live Website](http://www.creative-portfolios.com/) ⚡️
+
+## Development
+
+Developed by [Gabriele Canepa](http://www.gabrielecanepa.com/) as exercise for [Le Wagon](http://www.lewagon.com), using _Le Wagon Dictionary API_ (https://wagon-dictionary.herokuapp.com/autocomplete/) and redirection to [Dictionary.com](http://www.dictionary.com).
+
 ## Usage
 
 First clone this repository to your laptop. You must have Node (> v4) and [yarn](https://yarnpkg.com/lang/en/docs/install/) installed.
@@ -54,4 +60,3 @@ echo "node_modules" >> .gitignore
 git add .
 git commit -m "JavaScript empty project with ESLint"
 ```
-
