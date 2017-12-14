@@ -1,17 +1,16 @@
-# AJAX Dictionary Search
-
-![AJAX Dictionary Search]
+![](bg.png)
 
 >🔍 Simple AJAX autocomplete input with Dictionary.com words and redirection.
+
+# AJAX Dictionary Search [![AJAX Dictionary](https://img.shields.io/badge/ajax-dictionary-orange.svg)](https://github.com/gabrielecanepa/ajax-dictionary-search) [![GitHub top language](https://img.shields.io/github/languages/top/badges/shields.svg)](https://github.com/gabrielecanepa/ajax-dictionary-search)
 
 ## Usage
 
 First clone this repository to your laptop. You must have Node (> v4) and [yarn](https://yarnpkg.com/lang/en/docs/install/) installed.
 
 ```bash
-cd ~/code/<your_github_nickname>
-git clone git@github.com:lewagon/webpack-boilerplate.git my-js-project
-cd my-js-project
+git clone git@github.com:gabrielecanepa/ajax-dictionary-search.git ajax-dictionary-search
+cd ajax-dictionary-search
 rm -rf .git
 yarn install
 stt # Open this folder in Sublime Text
@@ -27,7 +26,7 @@ webpack-dev-server
 Once a file has been updated in Sublime, you can run it with:
 
 ```bash
-node lib/01_types.js
+node lib/autocomplete.js
 ```
 
 ## How was this repo generated?
@@ -53,6 +52,6 @@ touch index.html
 git init
 echo "node_modules" >> .gitignore
 git add .
-git commit -m "JavaScript empty project with ESLint (Airbnb)"
+git commit -m "JavaScript empty project with ESLint"
 ```
 
