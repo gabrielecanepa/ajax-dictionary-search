@@ -11,6 +11,13 @@ body {
   display: none;
 }
 
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
 #content {
   position: absolute;
   height: 50px;
@@ -167,4 +174,8 @@ input {
 
 #results a:hover::after {
   content: "←";
+}
+
+.github-button {
+  margin-top: 90vh;
 }
