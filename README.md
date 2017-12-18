@@ -2,7 +2,7 @@
 
 >🔍 Simple AJAX autocomplete input with Dictionary.com words and redirection.
 
-# AJAX Dictionary Search [![AJAX Dictionary](https://img.shields.io/badge/ajax-dictionary-orange.svg)](https://gabrielecanepa.github.io/ajax-dictionary-search/) [![GitHub top language](https://img.shields.io/github/languages/top/badges/shields.svg)](https://github.com/gabrielecanepa/ajax-dictionary-search)
+# AJAX Dictionary Search
 
 ## [Live Website](https://gabrielecanepa.github.io/ajax-dictionary-search/) ⚡️
 
