@@ -4,7 +4,7 @@
 
 # AJAX Dictionary Search
 
-## [Live Website](https://gabrielecanepa.github.io/ajax-dictionary-search/) ⚡️
+### [See Live](https://gabrielecanepa.github.io/ajax-dictionary-search/) ⚡️
 
 ## Development
 
