@@ -165,11 +165,11 @@ input {
 #results a {
   color: white;
   text-decoration: none;
-  transition: 100ms;
+  transition: 10ms;
 }
 
 #results a:hover {
-  font-size: 110%;
+  font-size: 105%;
 }
 
 #results a:hover::after {
