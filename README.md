@@ -8,7 +8,7 @@
 
 ## Development
 
-Developed by [Gabriele Canepa](http://www.gabrielecanepa.com/) as exercise for [Le Wagon](http://www.lewagon.com), using _Le Wagon Dictionary API_ (https://wagon-dictionary.herokuapp.com/autocomplete/) and redirection to [Dictionary.com](http://www.dictionary.com).
+Developed by [Gabriele Canepa](http://www.gabrielecanepa.com/) for [Le Wagon](http://www.lewagon.com) using _Le Wagon Dictionary API_ (https://wagon-dictionary.herokuapp.com/autocomplete/).
 
 ## Usage
 
