@@ -169,7 +169,7 @@ input {
 }
 
 #results a:hover {
-  font-size: 105%;
+  font-size: 102%;
 }
 
 #results a:hover::after {

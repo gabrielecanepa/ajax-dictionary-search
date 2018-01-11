@@ -1,6 +1,6 @@
 ![AJAX Dictionary Search](bg.png)
 
->🔍 Simple AJAX autocomplete input with Dictionary.com words and redirection.
+>🔍 Simple AJAX autocomplete input with Dictionary.com redirection.
 
 # AJAX Dictionary Search
 
