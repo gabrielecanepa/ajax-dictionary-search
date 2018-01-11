@@ -2,13 +2,13 @@
 
 >🔍 Simple AJAX autocomplete input with Dictionary.com words and redirection.
 
-# AJAX Dictionary Search [![AJAX Dictionary](https://img.shields.io/badge/ajax-dictionary-orange.svg)](https://gabrielecanepa.github.io/ajax-dictionary-search/) [![GitHub top language](https://img.shields.io/github/languages/top/badges/shields.svg)](https://github.com/gabrielecanepa/ajax-dictionary-search)
+# AJAX Dictionary Search
 
-## [Live Website](https://gabrielecanepa.github.io/ajax-dictionary-search/) ⚡️
+### [See Live](https://gabrielecanepa.github.io/ajax-dictionary-search/) ⚡️
 
 ## Development
 
-Developed by [Gabriele Canepa](http://www.gabrielecanepa.com/) as exercise for [Le Wagon](http://www.lewagon.com), using _Le Wagon Dictionary API_ (https://wagon-dictionary.herokuapp.com/autocomplete/) and redirection to [Dictionary.com](http://www.dictionary.com).
+Developed by [Gabriele Canepa](http://www.gabrielecanepa.com/) for [Le Wagon](http://www.lewagon.com) using _Le Wagon Dictionary API_ (https://wagon-dictionary.herokuapp.com/autocomplete/).
 
 ## Usage
 
