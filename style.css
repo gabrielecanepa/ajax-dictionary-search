@@ -175,7 +175,3 @@ input {
 #results a:hover::after {
   content: "←";
 }
-
-.github-button {
-  margin-top: 90vh;
-}
