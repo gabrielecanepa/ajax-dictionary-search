@@ -2074,6 +2074,10 @@ pkg-dir@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
+popper.js@^1.14.2:
+  version "1.14.3"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.3.tgz#1438f98d046acf7b4d78cd502bf418ac64d4f095"
+
 portfinder@^1.0.9:
   version "1.0.13"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.13.tgz#bb32ecd87c27104ae6ee44b5a3ccbf0ebb1aede9"
@@ -2658,6 +2662,12 @@ timers-browserify@^2.0.4:
   resolved "https://registry.yarnpkg.com/timers-browserify/-/timers-browserify-2.0.4.tgz#96ca53f4b794a5e7c0e1bd7cc88a372298fa01e6"
   dependencies:
     setimmediate "^1.0.4"
+
+tippy.js@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-2.5.0.tgz#393826b42aa1750268e0d2a4d6f047abe4c96d50"
+  dependencies:
+    popper.js "^1.14.2"
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"
