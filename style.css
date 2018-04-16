@@ -191,8 +191,8 @@ input {
   transition: visibility 2s ease-out;
 }
 #tippy.hide {
-  -webkit-animation: fadeOutUp 1s ease both;
-  animation: fadeOutUp 1s ease both;
+  -webkit-animation: fadeOutUp 2s ease both;
+  animation: fadeOutUp 2s ease both;
 }
 .tippy-tooltip {
   font-size: 0.95rem;
