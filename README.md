@@ -1,4 +1,4 @@
-![AJAX Dictionary Search](bg.png)
+![AJAX Dictionary Search](img/bg.png)
 
 >🔍 Simple AJAX autocomplete input with Dictionary.com redirection.
 
