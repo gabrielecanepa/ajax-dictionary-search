@@ -199,6 +199,11 @@ input {
   position: absolute;
   bottom: 20px;
   right: 20px;
+  -webkit-cursor: pointer;
+  cursor: pointer;
+}
+.tippy-tooltip.info-theme * {
+  margin: 0;
 }
 
 /* Keyframes */
