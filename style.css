@@ -194,13 +194,8 @@ input {
   -webkit-animation: fadeOutUp 1s ease both;
   animation: fadeOutUp 1s ease both;
 }
-#info {
-  width: 20px;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  -webkit-cursor: pointer;
-  cursor: pointer;
+.tippy-tooltip {
+  font-size: 0.95rem;
 }
 .tippy-tooltip.info-theme * {
   margin: 0;
@@ -210,6 +205,14 @@ input {
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+#info {
+  width: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  -webkit-cursor: pointer;
+  cursor: pointer;
 }
 
 /* Keyframes */
