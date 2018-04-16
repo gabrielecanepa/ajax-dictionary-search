@@ -5,6 +5,7 @@ body {
   color: #FFF;
   margin: 0;
   font-family: "Palaquin", sans-serif;
+  height: 100vh;
 }
 h1 {
   text-align: center;
@@ -189,7 +190,18 @@ input {
   animation-direction: normal, alternate;
   transition: visibility 2s ease-out;
 }
+#tippy.hide {
+  -webkit-animation: fadeOutUp 1s ease both;
+  animation: fadeOutUp 1s ease both;
+}
+#info {
+  width: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
 
+/* Keyframes */
 @-webkit-keyframes hvr-bob {
   0% {
     -webkit-transform:translateY(-8px);
@@ -230,4 +242,23 @@ input {
     transform:translateY(-8px);
   }
 }
-
+@-webkit-keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
