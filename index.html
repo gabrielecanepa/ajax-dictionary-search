@@ -9,8 +9,19 @@
 
   <body>
     <form id="content">
+      <!-- Tooltip -->
+      <div class="tippy-popper" role="tooltip" id="tippy" x-placement="top" style="z-index: 9999; transition-duration: 0ms; visibility: visible; position: absolute; will-change: transform; bottom: 75px; left: -124px;">
+        <div class="tippy-tooltip dark-theme" data-size="regular" data-animation="perspective" data-state="visible" style="transition-duration: 350ms; top: -5px;">
+          <div class="tippy-roundarrow" style="left: 87px;">
+            <svg viewBox="0 0 24 8" xmlns="http://www.w3.org/2000/svg"><path d="M3 8s2.021-.015 5.253-4.218C9.584 2.051 10.797 1.007 12 1c1.203-.007 2.416 1.035 3.761 2.782C19.012 8.005 21 8 21 8H3z"></path></svg>
+          </div>
+          <div class="tippy-content">
+            Click here to start searching
+          </div>
+        </div>
+      </div>
       <input type="text" name="input" id="search" autocomplete="clearoff">
-      <button type="reset" class="search" title="Click here to start searching"></button>
+      <button type="reset" class="search"></button>
       <ul id="results">
       </ul>
     </form>
