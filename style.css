@@ -204,6 +204,12 @@ input {
 }
 .tippy-tooltip.info-theme * {
   margin: 0;
+  text-align: left;
+}
+.tippy-tooltip.info-theme a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 /* Keyframes */
