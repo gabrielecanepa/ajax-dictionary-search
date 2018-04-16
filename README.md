@@ -1,4 +1,4 @@
-![AJAX Dictionary Search](bg.png)
+![AJAX Dictionary Search](bg-2.png)
 
 >🔍 Simple AJAX autocomplete input with Dictionary.com redirection.
 
@@ -8,7 +8,7 @@
 
 ## Development
 
-Developed by [Gabriele Canepa](http://www.gabrielecanepa.com/) for [Le Wagon](http://www.lewagon.com) using _Le Wagon Dictionary API_ (https://wagon-dictionary.herokuapp.com/autocomplete/).
+Developed for [Le Wagon](http://www.lewagon.com) using [Le Wagon Dictionary API](https://wagon-dictionary.herokuapp.com/autocomplete/).
 
 ## Usage
 

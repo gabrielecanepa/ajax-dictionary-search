@@ -6,16 +6,16 @@ body {
   margin: 0;
   font-family: "Palaquin", sans-serif;
 }
-.hidden {
-  display: none;
-}
-
 h1 {
   text-align: center;
   margin-top: 8rem;
   font-size: 3rem;
   font-weight: lighter;
 }
+.hidden {
+  display: none;
+}
+
 #content {
   position: absolute;
   height: 50px;
