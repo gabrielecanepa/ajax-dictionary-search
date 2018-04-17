@@ -148,7 +148,7 @@ input {
   margin: 0;
 }
 #results li {
-  padding: 0 1rem;
+  padding-left: 1rem;
   position: relative;
   -webkit-transition: all 150ms ease-in-out;
   -webkit-transform: scale(1);
