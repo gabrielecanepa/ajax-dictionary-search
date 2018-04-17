@@ -147,7 +147,7 @@ input {
   padding: 0;
   margin: 0;
 }
-#results a {
+#results li {
   color: white;
   text-decoration: none;
   padding-left: 1rem;
@@ -161,7 +161,7 @@ input {
   transition: all 150ms ease-in-out;
   transform: scale(1);
 }
-#results a:hover {
+#results li:hover {
   cursor: pointer;
   z-index: 2;
   -webkit-transform: scale(1.3);
@@ -170,9 +170,9 @@ input {
   transform: scale(1.3);
   padding-left: 38px;
 }
-/*#results a {
+#results a {
   transition: 10ms;
-}*/
+}
 #tippy {
   -webkit-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
