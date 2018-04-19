@@ -8,7 +8,7 @@
 
 ## Development
 
-Developed for [Le Wagon](http://www.lewagon.com) using [Le Wagon Dictionary API](https://wagon-dictionary.herokuapp.com/autocomplete/).
+Developed for [Le Wagon](http://www.lewagon.com) using [this dictionary API](https://wagon-dictionary.herokuapp.com/autocomplete/).
 
 ## Usage
 
