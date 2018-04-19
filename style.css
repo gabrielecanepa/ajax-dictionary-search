@@ -189,11 +189,11 @@ input {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
-  transition: visibility 2s ease-out;
+  transition: visibility 1.5s ease-out;
 }
 #tippy.hide {
-  -webkit-animation: fadeOutUp 2s ease both;
-  animation: fadeOutUp 2s ease both;
+  -webkit-animation: fadeOutUp 1.5s ease both;
+  animation: fadeOutUp 1.5s ease both;
 }
 .tippy-tooltip {
   font-size: 0.95rem;
