@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: "Palaquin", sans-serif;
   height: 100vh;
+  color: red;
 }
 h1 {
   text-align: center;
