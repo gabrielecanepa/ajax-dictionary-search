@@ -1,6 +1,5 @@
 ![AJAX Dictionary Search](img/bg.png)
 
->🔍 Simple AJAX autocomplete input with Dictionary.com redirection.
 
 # AJAX Dictionary Search
 
@@ -8,7 +7,7 @@
 
 ## Development
 
-Developed for [Le Wagon](https://lewagon.com/lisbon) using [this dictionary API](https://wagon-dictionary.herokuapp.com/autocomplete/).
+Developed for [Le Wagon](https://lewagon.com) using [this dictionary API](https://wagon-dictionary.herokuapp.com/autocomplete/).
 
 ## Usage
 
@@ -61,6 +60,6 @@ git add .
 git commit -m "JavaScript empty project with ESLint"
 ```
 
-[![MIT Licensed](img/badge.svg)](https://gabrielecanepa.github.io/mit-license/)
+[![MIT Licensed](img/badge.svg)](https://gabriele.canepa.io/mit-license/)
 
 [↑ back to top](#ajax-dictionary-search)
