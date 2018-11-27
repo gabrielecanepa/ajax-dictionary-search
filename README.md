@@ -18,7 +18,6 @@ git clone git@github.com:gabrielecanepa/ajax-dictionary-search.git ajax-dictiona
 cd ajax-dictionary-search
 rm -rf .git
 yarn install
-stt # Open this folder in Sublime Text
 ```
 
 Make sure you have `./node_modules/.bin` in your `$PATH`. This way you can run this:
