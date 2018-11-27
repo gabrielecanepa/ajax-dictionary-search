@@ -21,17 +21,11 @@ yarn install
 stt # Open this folder in Sublime Text
 ```
 
-Make sure you have `./node_modules/.bin` in your `$PATH`! This way you can run this:
+Make sure you have `./node_modules/.bin` in your `$PATH`. This way you can run this:
 
 ```bash
 eslint lib
 webpack-dev-server
-```
-
-Once a file has been updated in Sublime, you can run it with:
-
-```bash
-node lib/autocomplete.js
 ```
 
 ## How was this repo generated?
