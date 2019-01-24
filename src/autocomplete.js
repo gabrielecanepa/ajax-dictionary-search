@@ -2,6 +2,7 @@ const searchButton = document.querySelector('button.search');
 const searchInput = document.getElementById('search');
 const resultsList = document.getElementById('results');
 const definitionsList = document.getElementById('definitions');
+let mouseOverWord = false;
 
 const expandForm = () => {
   resultsList.classList.add('hidden');
@@ -30,41 +31,45 @@ const drawWordsList = (words) => {
 };
 
 const drawWordDefinitions = (wordList) => {
-  const word = wordList.querySelector('span').innerText;
   definitionsList.innerHTML = '';
   definitionsList.classList.remove('hidden');
 
+  const word = wordList.querySelector('span').innerText;
   fetch(`https://googledictionaryapi.eu-gb.mybluemix.net/?define=${word}&lang=en`)
     .then(response => response.json())
     .then((definitions) => {
-      definitionsList.innerHTML = '';
+    definitionsList.innerHTML = '';
+    if (wordList.hasAttribute('active')) {
       definitions.forEach((definition) => {
         definitionsList.insertAdjacentHTML('beforeend', `
-          <li id="${definition.word}">
-            <span style="font-size: 1.2em">${definition.word}</span> <small>${definition.phonetic ? definition.phonetic : ''}</small>
-          </li>
+        <li id="${definition.word}">
+          <span style="font-size: 1.2em">${definition.word}</span> <small style="opacity: 0.9">${definition.phonetic ? definition.phonetic : ''}</small>
+        </li>
         `);
         Object.keys(definition.meaning).forEach((meaning) => {
           const wordDefinition = definition.meaning[meaning][0].definition;
 
           document.getElementById(definition.word).insertAdjacentHTML('beforeend', `
-            <p>
-              <span style="font-size: 0.8em">${meaning}</span>
-              ${wordDefinition ? wordDefinition : ''}
-            </p>
+          <p>
+            <span style="font-size: 0.8em; opacity: 0.9">${meaning}</span>
+            ${wordDefinition ? wordDefinition : ''}
+          </p>
           `);
         });
       });
       wordList.querySelector('.wheels').classList.add('hidden');
-    })
-    .catch(() => {
+    }
+  })
+  .catch(() => {
+    if (wordList.hasAttribute('active')) {
       definitionsList.innerHTML = `
-        <p>
-          Can't find any definition of <em>${word}</em> <span style="font-size: 1.8em">🤷🏼‍♂️</span>
-        </p>
+      <p>
+        Can't find any definition of <span style="font-size: 1.15em">${word}</span> <span style="font-size: 1.8em">🤷🏼‍♂️</span>
+      </p>
       `;
       wordList.querySelector('.wheels').classList.add('hidden');
-    })
+    }
+  })
 }
 
 const autocomplete = (event) => {
@@ -77,12 +82,13 @@ const autocomplete = (event) => {
         document.querySelectorAll('#results li').forEach((wordList) => {
           const wheels = wordList.querySelector('.wheels');
 
-          wordList.addEventListener('mouseenter', () => {
-            definitionsList.innerHTML = '';
+          wordList.addEventListener('mouseover', () => {
+            wordList.setAttribute('active', '');
             wheels.classList.remove('hidden');
             drawWordDefinitions(wordList);
           });
           wordList.addEventListener('mouseout', () => {
+            wordList.removeAttribute('active');
             wheels.classList.add('hidden');
             definitionsList.innerHTML = '';
           });
@@ -90,7 +96,7 @@ const autocomplete = (event) => {
       } else if (words !== '') {
         resultsList.innerHTML = `
         <p>
-          No results found for <em>${event.target.value}</em> <span style="font-size: 1.8em">🤷🏼‍♂️</span>
+          No results found for <span style="font-size: 1.15em">${event.target.value}</span> <span style="font-size: 1.8em">🤷🏼‍♂️</span>
         </p>
         `;
         definitionsList.innerHTML = '';
