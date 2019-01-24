@@ -1,8 +1,8 @@
+const content = document.getElementById('content');
 const searchButton = document.querySelector('button.search');
 const searchInput = document.getElementById('search');
 const resultsList = document.getElementById('results');
 const definitionsList = document.getElementById('definitions');
-let mouseOverWord = false;
 
 const expandForm = () => {
   resultsList.classList.add('hidden');
@@ -107,5 +107,6 @@ const autocomplete = (event) => {
     })
 };
 
+content.addEventListener('submit', event => event.preventDefault());
 searchButton.addEventListener('click', expandForm);
 searchInput.addEventListener('keyup', autocomplete);
