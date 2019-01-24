@@ -23,23 +23,23 @@ const drawWordsList = (words) => {
 
   words.forEach(word => resultsList.insertAdjacentHTML('beforeend', `
     <li>
-      <span>${word}</span>
-      <img src="img/wheels.svg" class="wheels hidden">
+      <span>
+        ${word}<img src="img/wheels.svg" class="wheels hidden">
+      </span>
     </li>
     `
   ));
 };
 
-const drawWordDefinitions = (wordList) => {
+const drawWordDefinitions = (word) => {
   definitionsList.innerHTML = '';
   definitionsList.classList.remove('hidden');
 
-  const word = wordList.querySelector('span').innerText;
-  fetch(`https://googledictionaryapi.eu-gb.mybluemix.net/?define=${word}&lang=en`)
+  fetch(`https://googledictionaryapi.eu-gb.mybluemix.net/?define=${word.innerText}&lang=en`)
     .then(response => response.json())
     .then((definitions) => {
     definitionsList.innerHTML = '';
-    if (wordList.hasAttribute('active')) {
+    if (word.hasAttribute('active')) {
       definitions.forEach((definition) => {
         definitionsList.insertAdjacentHTML('beforeend', `
         <li id="${definition.word}">
@@ -57,17 +57,17 @@ const drawWordDefinitions = (wordList) => {
           `);
         });
       });
-      wordList.querySelector('.wheels').classList.add('hidden');
+      word.querySelector('.wheels').classList.add('hidden');
     }
   })
   .catch(() => {
-    if (wordList.hasAttribute('active')) {
+    if (word.hasAttribute('active')) {
       definitionsList.innerHTML = `
       <p>
-        Can't find any definition of <span style="font-size: 1.15em">${word}</span> <span style="font-size: 1.8em">🤷🏼‍♂️</span>
+        Can't find any definition of <span style="font-size: 1.15em">${word.innerText}</span> <span style="font-size: 1.8em">🤷🏼‍♂️</span>
       </p>
       `;
-      wordList.querySelector('.wheels').classList.add('hidden');
+      word.querySelector('.wheels').classList.add('hidden');
     }
   })
 }
@@ -76,19 +76,19 @@ const autocomplete = (event) => {
   fetch(`https://wagon-dictionary.herokuapp.com/autocomplete/${event.target.value}`)
     .then(response => response.json())
     .then((data) => {
-      const words = data.words || '';
+      const words = data.words || [];
       if (words.length > 0) {
         drawWordsList(words);
-        document.querySelectorAll('#results li').forEach((wordList) => {
-          const wheels = wordList.querySelector('.wheels');
+        document.querySelectorAll('#results li span').forEach((word) => {
+          const wheels = word.querySelector('.wheels');
 
-          wordList.addEventListener('mouseover', () => {
-            wordList.setAttribute('active', '');
+          word.addEventListener('mouseover', () => {
+            word.setAttribute('active', '');
             wheels.classList.remove('hidden');
-            drawWordDefinitions(wordList);
+            drawWordDefinitions(word);
           });
-          wordList.addEventListener('mouseout', () => {
-            wordList.removeAttribute('active');
+          word.addEventListener('mouseout', () => {
+            word.removeAttribute('active');
             wheels.classList.add('hidden');
             definitionsList.innerHTML = '';
           });

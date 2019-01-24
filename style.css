@@ -141,7 +141,8 @@ input {
   padding: 0 0 1.5em;
   margin: 0;
 }
-#results li {
+#results li span {
+  display: inline-block;
   padding-left: 1rem;
   position: relative;
   -webkit-transition: all 150ms ease-in-out;
@@ -153,7 +154,7 @@ input {
   transition: all 150ms ease-in-out;
   transform: scale(1);
 }
-#results li:hover {
+#results li span:hover {
   cursor: pointer;
   z-index: 2;
   -webkit-transform: scale(1.3);
