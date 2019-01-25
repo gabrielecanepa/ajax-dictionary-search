@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: "Palaquin", sans-serif;
   min-height: 100vh;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .hidden {
   display: none;
@@ -172,7 +173,7 @@ input {
   position: absolute;
   top: 3em;
   list-style-type: none;
-  width: 300px;
+  padding-inline-start: 20px;
 }
 #tippy {
   -webkit-animation-name: hvr-bob-float, hvr-bob;

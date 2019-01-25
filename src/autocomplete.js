@@ -107,6 +107,9 @@ const autocomplete = (event) => {
     })
 };
 
+// Allow :active styles
+document.addEventListener('touchstart', () => {}, true);
+
 content.addEventListener('submit', event => event.preventDefault());
 searchButton.addEventListener('click', expandForm);
 searchInput.addEventListener('keyup', autocomplete);
